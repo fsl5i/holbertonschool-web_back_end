@@ -5,6 +5,7 @@ from typing import Mapping, Any, TypeVar, Union
 
 T = TypeVar('T')  # generic type for default and return
 
+
 def safely_get_value(
     dct: Mapping,
     key: Any,
