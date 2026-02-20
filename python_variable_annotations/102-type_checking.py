@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Type-checked zoom_array function."""
 
-from typing import Iterable, List, Any
+from typing import Tuple, List, Any
 
-def zoom_array(lst: Iterable[Any], factor: int = 2) -> List[Any]:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """Return a zoomed-in list by repeating each element factor times."""
-    zoomed_in: List[Any] = [
+    zoomed_in: List = [
         item for item in lst
         for _ in range(factor)
     ]
