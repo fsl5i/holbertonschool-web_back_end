@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Module that provides a function to get lengths of elements in an iterable."""
+"""Module that provides element_length function."""
 
 from typing import Iterable, Sequence, List, Tuple
 
 
-def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
-    """Return a list of tuples (element, length of element) for each element in lst."""
+def element_length(
+    lst: Iterable[Sequence]
+) -> List[Tuple[Sequence, int]]:
+    """Return list of tuples with element and its length."""
     return [(i, len(i)) for i in lst]
